@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    
+
+}
+
+.conteiner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-1 {
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgb(99, 6, 6);
+    border-top: 3px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ani 2s linear infinite;
+}
+
+.circle-2 {
+    width: 130px;
+    height: 130px;
+    border: 3px solid palevioletred;
+    border-top: 3px solid purple;
+    border-radius: 50%;
+    animation: ani 2.5s linear infinite;
+}
+
+@keyframes ani{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
